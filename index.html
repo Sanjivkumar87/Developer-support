@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="image.png">
+  <title>Support</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html#hero" class="logo">
+      <div class="logo-cube"></div>
+      Support
+    </a>
+  </nav>
+
+  <div id="cur"></div>
+  <div id="cur-dot"></div>
+  <canvas id="bg-canvas"></canvas>
+  <div id="progress"></div>
+
+  <section class="support">
+    <h1>Support the Developer ❤️</h1>
+    <p>
+      If my work helped you even a little, you can support me here.
+      Every contribution helps me build bigger things!
+    </p>
+
+    <div class="card">
+      <h2>Select Amount</h2>
+      <div class="amounts">
+        <button onclick="pay(10)">₹10 • Coffee</button>
+        <button onclick="pay(50)">₹50 • Appreciate</button>
+        <button onclick="pay(100)">₹100 • Backer</button>
+      </div>
+
+      <input type="number" id="customAmount" placeholder="Enter custom amount" />
+      <button onclick="customPay()">Proceed</button>
+    </div>
+
+    <div id="qrContainer"></div>
+    <p style="color:var(--dim);font-size:.8rem">
+      Secure UPI payment • No data stored
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
